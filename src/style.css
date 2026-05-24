@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+#time-display {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.focus-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+#focus-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #cdd6f4;
+  color: #cdd6f4;
+  text-align: center;
+  outline: none;
+}
+
+#focus-text {
+  font-size: 2rem;
+  color: #a6e3a1;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #89b4fa;
+  color: #1e1e2e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #74c7ec;
+}
+
+.quote-section {
+  margin-top: 50px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none !important;
+}

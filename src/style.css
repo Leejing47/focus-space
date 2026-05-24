@@ -71,6 +71,7 @@ button:hover {
   margin-top: 50px;
   font-style: italic;
   opacity: 0.8;
+  text-shadow: 0 0 5px rgba(205,214,244,0.5); /* 新增发光效果 */
 }
 
 .hidden {

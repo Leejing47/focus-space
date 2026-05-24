@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Space</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 时间区域 -->
+    <h1 id="time-display">00:00:00</h1>
+
+    <!-- 专注目标区域 -->
+    <div class="focus-section">
+      <h2>今天的核心目标是什么？</h2>
+      <input type="text" id="focus-input" placeholder="输入目标并按回车键...">
+      <h3 id="focus-text" class="hidden"></h3>
+      <button id="clear-focus" class="hidden">清除重设</button>
+    </div>
+
+    <!-- AJAX灵感区域 -->
+    <div class="quote-section">
+      <p id="quote-text">正在获取今日灵感...</p>
+      <button id="new-quote-btn">换一句</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -30,3 +30,29 @@
 ```bash
 git clone [https://github.com/Leejing47/focus-space.git](https://github.com/Leejing47/focus-space.git)
 cd focus-space
+```
+
+### 2. 安装项目依赖
+项目使用 Webpack 5 及其相关 Loader/Plugin 进行构建，运行以下命令自动读取 `package.json` 并安装所需依赖：
+```bash
+npm install
+```
+
+### 3. 启动本地开发服务器
+启动 Webpack Dev Server。该模式下支持**模块热替换（HMR）**，代码修改后浏览器会自动刷新视图：
+```bash
+npm run start
+```
+*运行成功后，终端会自动打开或提示本地访问地址：`http://localhost:3000`*
+
+### 4. 生产环境编译打包
+当项目开发完成需要发布时，执行此命令。Webpack 会对源码进行压缩、混淆及性能优化，并输出静态资源至 `dist/` 目录：
+```bash
+npm run build
+```
+
+### 5. 自动化构建与部署
+项目集成了 `gh-pages` 自动化部署流。执行以下命令将触发 `predeploy` 钩子自动打包，并一键将 `dist/` 目录下的静态资源推送到 GitHub Pages 分支上线：
+```bash
+npm run deploy
+```

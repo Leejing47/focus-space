@@ -28,5 +28,5 @@
 
 ### 1. 克隆仓库
 ```bash
-git clone [https://github.com/Leejing47/focus-space.git](https://github.com/你的用户名/focus-space.git)
+git clone [https://github.com/Leejing47/focus-space.git](https://github.com/Leejing47/focus-space.git)
 cd focus-space

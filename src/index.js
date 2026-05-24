@@ -49,3 +49,33 @@ clearFocusBtn.addEventListener('click', () => {
 
 // 初始化检查
 checkFocus()
+
+// 3. AJAX 获取随机名言功能
+const quoteText = document.getElementById('quote-text')
+const newQuoteBtn = document.getElementById('new-quote-btn')
+
+async function fetchQuote() {
+  quoteText.textContent = '获取灵感中...'
+  try {
+    // 使用 Fetch 发送 GET 请求
+    const response = await fetch('https://api.adviceslip.com/advice')
+    if (!response.ok) {
+      throw new Error('网络请求失败')
+    }
+
+    // 解析 JSON 数据
+    const data = await response.json()
+
+    //  提取名言文本并渲染到页面
+    quoteText.textContent = `"${data.slip.advice}"`
+  } catch (error) {
+    console.error('Error fetching quote:', error)
+    quoteText.textContent = 'Oops! 灵感走丢了，请重试。'
+  }
+}
+
+// 绑定按钮点击事件
+newQuoteBtn.addEventListener('click', fetchQuote)
+
+// 页面加载时自动获取一次
+fetchQuote()
